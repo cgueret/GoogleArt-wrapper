@@ -72,8 +72,8 @@ class Paint(object):
     
         # Create the resource
         this = GART[paint_reference]
-        self.graph.add((this, RDF.type, DCMI.StillImage))
-        self.graph.add((this, RDF.type, DCMI.PhysicalResource))
+        self.graph.add((this, RDF.type, DCMI['StillImage']))
+        self.graph.add((this, RDF.type, DCMI['PhysicalResource']))
         
         # Get general information
         content = info_block.find(attrs={'class':'content'})
