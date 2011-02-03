@@ -8,7 +8,7 @@ from BeautifulSoup import BeautifulSoup
 import urllib2
 from datetime import date
 import gzip
-import json
+import simplejson as json
 import StringIO
 import re
 from SPARQLWrapper import SPARQLWrapper, JSON #@UnresolvedImport

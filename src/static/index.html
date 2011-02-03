@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Googleart2RDF server">
+<meta name="author" content="Christophe Gueret">
+</head>
+<html>
+<body>
+<h2>Welcome to the Googleart2RDF server.</h2>
+<p>The <a href="http://www.googleartproject.com">GoogleArtProject</a> is a place to explore museums from around the world, 
+seeing and learning about the artwork they contain. It is a cool service, offering very high res images of the paintings,
+but not providing a machine-friendly access to the data shown. This server provides a wrapper around the HTML page for
+a painting and exposes part of the information using FOAF and Dublin Core ontologies.</p>
+
+
+<h3>Usage</h3>
+<p>You can access any painting as follows:</p>
+<ul>
+	<li>http://linkeddata.few.vu.nl/googleart/(path to the painting on googleartproject.com)
+</ul>
+<p>Here are two examples (google art page first, RDF second):</p>
+<ul>
+	<li><a href="http://www.googleartproject.com/museums/rijks/night-watch">Night Watch</a> [<a href="../museums/rijks/night-watch">RDF</a>]</li>
+	<li><a href="http://www.googleartproject.com/museums/uffizi/the-birth-of-venus">The Birth of Venus</a> [<a href="../museums/uffizi/the-birth-of-venus">RDF</a>]</li>
+</ul>
+
+
+<h3>Code</h3>
+The source code is freely available on <a href="https://github.com/cgueret/GoogleArt-wrapper">GitHub</a> under the revised BSD license.
+
+
+<H3>Misc.</h3>
+Note, this service is affiliated in no way with googleartproject.com. This is
+a beta service so uptime cannot be guaranteed but we do our best.
+Questions and comments should be directed to Christophe Gueret (c.d.m.gueret at
+vu.nl)
+
+<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet change the UA-XXXXX-X to be your site's ID -->
+<script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+</script>
+</body>
+</html>
