@@ -42,14 +42,10 @@ class PaintHandler(tornado.web.RequestHandler):
 
 
 if __name__ == '__main__':
-    settings = {
-    "static_path": os.path.join(os.path.dirname(__file__), "static"),
-    }
-
     application = tornado.web.Application([
     (r"/", MainHandler),
     (r"/museums/([^/]*)/([^/]+)/?$", PaintHandler)
-    ], **settings)
+    ])
 
     http_server = tornado.httpserver.HTTPServer(application)
     p = 10000
