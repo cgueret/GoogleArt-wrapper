@@ -15,7 +15,7 @@ class MainHandler(tornado.web.RequestHandler):
     Default handler, redirect to the homepage
     '''
     def get(self):
-        self.redirect("/static/index.html")
+        self.render("index.html")
         return
 
 class PaintHandler(tornado.web.RequestHandler):
