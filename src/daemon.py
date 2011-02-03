@@ -19,8 +19,8 @@ class PaintHandler(tornado.web.RequestHandler):
         if os.path.isfile('cache/' + museum + "/" + paint):
             response = file('cache/' + museum + "/" + paint).read()
         else:
-            paint = Paint('museums/%s/%s' % (museum, paint))
-            response = paint.to_rdfxml()
+            paint_obj = Paint('museums/%s/%s' % (museum, paint))
+            response = paint_obj.to_rdfxml()
             if not os.path.exists('cache/'):
                 os.mkdir('cache/')
             if not os.path.exists('cache/' + museum):
