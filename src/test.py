@@ -126,6 +126,8 @@ def get_painting(paint_reference):
     
     return graph.serialize()
 
+
+
 if __name__ == '__main__':
     #print get_painting("museums/rijks/night-watch")
     #print get_painting("museums/rijks/river-view-by-moonlight-26")
