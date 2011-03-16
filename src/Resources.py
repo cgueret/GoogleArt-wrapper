@@ -117,5 +117,5 @@ class Painting(Resource):
             if block.attrMap.has_key('class') and block.get('class') == 'artworkListTrigger':
                 for link in block.findNextSiblings('dd')[0].findAll('a'):
                     if link.attrMap['href'] != "#":
-                        self.graph.add((this, DCT['relation'], GART[link.get('href')[1:]]))
+                        self.graph.add((this, DCT['relation'], GARTW[link.get('href')[1:]]))
         
